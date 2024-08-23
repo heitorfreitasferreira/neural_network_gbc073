@@ -1,6 +1,9 @@
-[ ] KFold + 6 neurônios na HL
-[ ] KFold + Preenchimento dos dados + 6 neurônios na HL
-[ ] 60:40 + Preenchimento dos dados + 6 neurônios na HL
-[ ] KFold + 2~10 neurônios na HL
-[ ] KFold + Preenchimento dos dados + 2~10 neurônios na HL
-[ ] 60:40 + Preenchimento dos dados + 2~10 neurônios na HL
+# Experimentos a serem feitos
+
+- [x] Implementar versão base com a arquitetura do artigo
+- [x] Testar com vários folds diferentes ao invés de apenas 60:40
+- [x] Testar vários learning rates de acordo com o melhor fold do exp anterior
+  - [ ] Tirar isso depois
+- [ ] Variar o número de épocas
+- [ ] Aumentar o número de neuronios na camada escondida
+- [ ] Testar com diferentes funções de ativação
