@@ -5,5 +5,5 @@
 - [x] Testar vários learning rates de acordo com o melhor fold do exp anterior
   - [x] Tirar isso depois
 - [x] Variar o número de épocas
-- [ ] Aumentar o número de neuronios na camada escondida
+- [x] Aumentar o número de neuronios na camada escondida
 - [x] Testar com diferentes funções de ativação
