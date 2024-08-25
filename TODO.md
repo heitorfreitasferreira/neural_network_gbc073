@@ -7,3 +7,6 @@
 - [x] Variar o número de épocas
 - [x] Aumentar o número de neuronios na camada escondida
 - [x] Testar com diferentes funções de ativação
+- [ ] Melhorar a descrição da arquitetura do artigo
+- [ ] Juntar todos os melhores parâmetros encontrados em um modelo
+- [ ] Testar utilizando divisão 70/30 nos dados
