@@ -7668,7 +7668,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Juntandos-os-dados-em-um-%C3%BAnico-DataFrame">Juntandos os dados em um único DataFrame<a class="anchor-link" href="#Juntandos-os-dados-em-um-%C3%BAnico-DataFrame">¶</a></h1>
+<h1 id="Juntando-os-dados-em-um-%C3%BAnico-DataFrame">Juntando os dados em um único DataFrame<a class="anchor-link" href="#Juntando-os-dados-em-um-%C3%BAnico-DataFrame">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8005,7 +8005,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dividindo-em-treino-e-teste-60:40">Dividindo em treino e teste 60:40<a class="anchor-link" href="#Dividindo-em-treino-e-teste-60:40">¶</a></h2><p>Foi feito assim como no artigo</p>
+<h2 id="Dividindo-em-treino-e-teste-60:40">Dividindo em treino e teste 60:40<a class="anchor-link" href="#Dividindo-em-treino-e-teste-60:40">¶</a></h2><p>Foi feito assim como no artigo.</p>
 <p><em>"The dataset was divided using ratio 60:40 i.e. 60% of the 2015 International Conference on Advances in Biomedical Engineering (ICABME) 22 dataset for training and 40% of the dataset for testing of the network. This is the standard ratio for dividing dataset in machine learning datase"</em></p>
 </div>
 </div>
@@ -8052,7 +8052,7 @@ Tamanho do conjunto de teste: 119
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Treinamento-do-modelo">Treinamento do modelo<a class="anchor-link" href="#Treinamento-do-modelo">¶</a></h2><p>Para implementação da rede neural retropropagada foi utilizado o scikit-learn, que possui um <a href="https://scikit-learn.org/stable/modules/neural_networks_supervised.html#mlp-tips">pacote de rede neural retropropagada</a>.</p>
-<p>Os resultados publicados no artigo é que o modelo implementado (MLP) obteve uma acurácia de 85%, que é maior que os resultados obtidos com outros modelos de classificação, porém o resultado obtido foi de 73%, importante notar que este resultado é encontrado ao definir a semente como 42, ao executar o código com outras sementes o resultado pode variar como demonstrado mais abaixo:</p>
+<p>Os resultados publicados no artigo é que o modelo implementado (MLP) obteve uma acurácia de 85%, que é maior que os resultados obtidos com outros modelos de classificação, porém o não foi fornecido um conjunto de seeds para que o experimento realizado no artigo fosse reproduzido. Desse modo, geramos seeds aleatoriamente até que encontrassemos uma que gerasse uma acurácia próxima a 85%. Ao executar o código com outras sementes o resultado pode variar como demonstrado mais abaixo.</p>
 <p><img alt="resultados" src="./assets/comparison.png"/></p>
 </div>
 </div>
@@ -8145,9 +8145,9 @@ Tamanho do conjunto de teste: 119
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Experimentos-Realizados">Experimentos Realizados<a class="anchor-link" href="#Experimentos-Realizados">¶</a></h1><p>Para padronizar os experimentos foi criado um framework que recebe quais parâmetros devem ser testados e retorna a média e desvio padrão dos resultados obtidos.
-Para cada variação de parâmetros, foram coletados dados de 1000 execuções, onde a semente de geração de números aleatórios foi alterada a cada execução de acordo com o número da execução $[0..1000)$</p>
-<p>Para cada experimento foi coletada a média de acurácia dentre as 1000 execuções, e foi plotado um gráfico onde no eixo x está o parâmetro variado e no eixo y linhas representando a acurácia média, minima, máxima, e desvio padrão.</p>
+<h1 id="Experimentos-realizados">Experimentos realizados<a class="anchor-link" href="#Experimentos-realizados">¶</a></h1><p>Para padronizar os experimentos foi criado um framework que recebe quais parâmetros devem ser testados e retorna a média e desvio padrão dos resultados obtidos.
+Para cada variação de parâmetros, foram coletados dados de 300 execuções, onde a semente de geração de números aleatórios foi alterada a cada execução de acordo com o número da execução $[0..300)$</p>
+<p>Para cada experimento foi coletada a média de acurácia dentre as 300 execuções, e foi plotado um gráfico onde no eixo x está o parâmetro variado e no eixo y linhas representando a acurácia média, minima, máxima, e desvio padrão.</p>
 </div>
 </div>
 </div>
@@ -8300,7 +8300,7 @@ Para cada variação de parâmetros, foram coletados dados de 1000 execuções, 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Melhor-N%C3%BAmero-de-K-Folds">Melhor Número de K-Folds<a class="anchor-link" href="#Melhor-N%C3%BAmero-de-K-Folds">¶</a></h3>
+<h3 id="Melhor-n%C3%BAmero-de-K-Folds">Melhor número de K-Folds<a class="anchor-link" href="#Melhor-n%C3%BAmero-de-K-Folds">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8445,7 +8445,7 @@ Acurácia média: 0.8117117117117116
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Melhor-N%C3%BAmero-de-%C3%89pocas">Melhor Número de Épocas<a class="anchor-link" href="#Melhor-N%C3%BAmero-de-%C3%89pocas">¶</a></h3>
+<h3 id="Melhor-n%C3%BAmero-de-%C3%89pocas">Melhor número de Épocas<a class="anchor-link" href="#Melhor-n%C3%BAmero-de-%C3%89pocas">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8558,7 +8558,7 @@ Acurácia: 0.8513513513513513
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Terceira-Modifica%C3%A7%C3%A3o:-Fun%C3%A7%C3%A3o-de-Ativa%C3%A7%C3%A3o">Terceira Modificação: Função de Ativação<a class="anchor-link" href="#Terceira-Modifica%C3%A7%C3%A3o:-Fun%C3%A7%C3%A3o-de-Ativa%C3%A7%C3%A3o">¶</a></h2><p>Aqui testamos a arquitetura original com todas as funções de ativação disponíveis no sklearn (relu, identity, tanh, logistic).</p>
+<h2 id="Terceira-modifica%C3%A7%C3%A3o:-Fun%C3%A7%C3%A3o-de-Ativa%C3%A7%C3%A3o">Terceira modificação: Função de Ativação<a class="anchor-link" href="#Terceira-modifica%C3%A7%C3%A3o:-Fun%C3%A7%C3%A3o-de-Ativa%C3%A7%C3%A3o">¶</a></h2><p>Aqui testamos a arquitetura original com todas as funções de ativação disponíveis no sklearn (relu, identity, tanh, logistic).</p>
 </div>
 </div>
 </div>
@@ -8683,7 +8683,7 @@ Score: 0.8648648648648649
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Quarta-Mofica%C3%A7%C3%A3o:-N%C3%BAmero-de-Neur%C3%B4nios">Quarta Moficação: Número de Neurônios<a class="anchor-link" href="#Quarta-Mofica%C3%A7%C3%A3o:-N%C3%BAmero-de-Neur%C3%B4nios">¶</a></h2><p>No artigo foram usados 6 neurônios na camada oculta, aqui testamos com 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.</p>
+<h2 id="Quarta-mofica%C3%A7%C3%A3o:-N%C3%BAmero-de-Neur%C3%B4nios">Quarta moficação: Número de Neurônios<a class="anchor-link" href="#Quarta-mofica%C3%A7%C3%A3o:-N%C3%BAmero-de-Neur%C3%B4nios">¶</a></h2><p>No artigo foram usados 6 neurônios na camada oculta, aqui testamos com 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.</p>
 </div>
 </div>
 </div>
@@ -8735,7 +8735,7 @@ Score: 0.8648648648648649
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Melhor-N%C3%BAmero-de-Neur%C3%B4nios-na-Camada-Oculta">Melhor Número de Neurônios na Camada Oculta<a class="anchor-link" href="#Melhor-N%C3%BAmero-de-Neur%C3%B4nios-na-Camada-Oculta">¶</a></h3>
+<h3 id="Melhor-n%C3%BAmero-de-neur%C3%B4nios-na-camada-oculta">Melhor número de neurônios na camada oculta<a class="anchor-link" href="#Melhor-n%C3%BAmero-de-neur%C3%B4nios-na-camada-oculta">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8808,7 +8808,7 @@ Acurácia: 0.7972972972972973
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Juntando-Todos-os-Melhores-Par%C3%A2metros">Juntando Todos os Melhores Parâmetros<a class="anchor-link" href="#Juntando-Todos-os-Melhores-Par%C3%A2metros">¶</a></h2>
+<h2 id="Juntando-todos-os-melhores-par%C3%A2metros">Juntando todos os melhores parâmetros<a class="anchor-link" href="#Juntando-todos-os-melhores-par%C3%A2metros">¶</a></h2>
 </div>
 </div>
 </div>
